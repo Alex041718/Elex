@@ -1,0 +1,85 @@
+sudo java -Xms128M -Xmx3500M -jar /opt/minecraft/server.jar nogui
+------------------------------------------
+Différent script :
+/opt/scripts/minecraft.sh
+/opt/scripts/minecraftStart.sh ( lancer le serveur avec screen )
+
+------------------------------------------
+
+
+-----------------------------------------------------------------
+
+top
+vcgencmd measure_temp
+
+----------------------------------------------------------------
+
+
+
+---------------------------------
+
+cat /opt/minecraft/logs/latest.log
+-----------------------------------
+
+
+
+
+-------------------------------------
+Configurez Minecraft pour qu'il démarre au démarrage :
+
+A l'interieur de : nano /etc/rc.local
+
+il y a : screen -dm -S minecraft /opt/scripts/minecraft.sh
+-------------------------------------
+
+
+--------------------------------------
+Pour accéder à votre console après le démarrage, utilisez la commande suivante ;
+
+sudo screen -r minecraft
+
+Ctrl + A  puis Ctrl + D pour quitter l'ecran
+-----------------------------------------
+
+
+
+---------------------------
+accceder au prpriété
+sudo nano /opt/minecraft/server.properties
+-----------------------------
+
+
+----------------------
+faire un backup :
+cd /opt
+sudo tar -zcvf minecraft_backup.tar.gz minecraft
+----------------------
+
+
+-------------------------
+
+obtenir l'ip
+hostname -I
+
+---------------------------
+
+                       PLUGINS
+
+---------------------------
+CHUNKY :
+chunky radius 		<radius> Sets the current radius
+chunky start 		Starts a new chunk generation task from the current selection
+https://www.spigotmc.org/resources/chunky.81534/
+---------------------------
+CHUNK LOADER
+
+https://dev.bukkit.org/projects/chunkloader-force-chunks-to-load/pages/commands-permissions
+
+/chunk 			Shows whether the chunk is force loaded or not.
+
+/chunk enable 		Sets the status of the plugin. Ticked: the plugin will give ticks to force-loaded chunks, so they are able to grow potatoes, etc.
+
+
+java 17:
+https://download.java.net/java/GA/jdk17.0.1/2a2082e5a09d4267845be086888add4f/12/GPL/openjdk-17.0.1_linux-aarch64_bin.tar.gz
+openjdk-17.0.1_linux-aarch64_bin.tar.gz

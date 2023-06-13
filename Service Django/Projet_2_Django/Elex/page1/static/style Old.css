@@ -1,0 +1,59 @@
+body {
+    background: #ffffff;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    color: grey;
+}
+
+
+a {
+    color: blue;
+}
+
+ul {
+    
+    border-color: white;
+}
+.LogBox {
+    background-color: blanchedalmond;
+    max-width: 1200px;
+    padding: 20px;
+    border-radius: 27px;
+}
+.LogText {
+    background-color: white;
+    color: black;
+    max-width: 1200px;
+    height: 700px;
+    overflow: auto;
+    border-style: solid;
+    border-color: white;
+    border-radius: 27px;
+}
+
+.Consol {
+
+    background-color: blanchedalmond;
+    max-width: 1200px;
+    margin-top: 20px;
+    padding: 20px;
+
+}
+
+.ConsolTextInput {
+    margin: 10px;
+    background-color: white;
+    height: 40px;
+    width: 1000px;
+    border-radius: 17px;
+    color: black;
+}
+.ConsolTextInput:focus {
+    background-color: white;
+    
+    
+}
+

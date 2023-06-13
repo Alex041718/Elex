@@ -1,0 +1,200 @@
+@font-face {
+    font-family: "MyriadPro-Regular";
+    src: url("MyriadPro-Regular.otf") format("otf");
+   }
+
+
+
+
+
+body {
+    
+    background-image: url(WallpaperELEX2.0_1902_1080.jpg);
+    color: black;
+    font-family: 'MyriadPro-Regular', sans-serif;
+}
+
+
+
+h1 {
+    margin: 32px;
+    text-align: center;
+    color: grey;
+}
+
+
+a {
+    color: blue;
+}
+
+ul {
+    
+    border-color: white;
+}
+.LogBox {
+    background-color: white;
+    max-width: 434px;
+    padding: 20px;
+    border-radius: 22px;
+    margin: auto;
+    margin-bottom: 23px;
+}
+
+.LogText {
+    font-size: 11px;
+    font-weight: bold;
+    font-family: 'MyriadPro-Regular', sans-serif;
+    background-color: white;
+    color: black;
+    max-width: 1200px;
+    height: 300px;
+    overflow: auto;
+    
+    border-style: solid;
+    border-color: white;
+    
+}
+
+
+
+.Consol {
+    margin-top: 20px;
+    margin: auto;
+    background-color: white;
+    max-width: 474px;
+    border-radius: 22px;
+    
+    
+    
+    
+
+}
+
+.Consol form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.ConsolTextInput {
+    font-family: 'MyriadPro-Regular', sans-serif;
+    background-color: transparent;
+    height: 45px;
+    width: 410px;
+    border-style: none;
+    outline: none;
+    padding-left: 30px;
+    padding-right: 40px;
+    font-size: 17px;
+    
+    
+}
+
+#sendButton {
+    background-image: url(ArrowConsol45pxWithWhite.png);
+    width: 45px;
+    height: 45px;
+    outline: inherit;
+    border: none;
+    cursor: pointer;
+    /*margin-top: 15px;
+
+    color: inherit;
+    
+    padding: 0;
+    font: inherit;
+    
+    */
+
+}
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 516px;
+    margin: auto;
+    
+}
+
+.btn {
+    
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: 0; 
+    background: transparent;
+    cursor: pointer;
+    transition: margin-top 0.5s;
+}
+
+.btn:hover {
+    margin-top: -5px;
+    box-shadow: grey;
+}
+
+#players {
+    margin: auto;
+    width: 472px;
+    min-height: 100px;
+    border-radius: 22px;
+    background-color: white;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.subSectionPlayer {
+    margin: auto;
+    width: 180px;
+    
+    border-radius: 22px;
+    background-color: white;
+    padding: 2px;
+    
+}
+
+#firstPlayer {
+    margin-bottom: 10px;
+}
+
+#secondPlayer {
+    margin-top: 10px;
+}
+
+.textPlayer {
+    margin: auto;
+    text-align: center;
+    border-radius: 11px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 1px;
+    color: white;
+    background-color: #f4d598;
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+#ratioPlayer {
+    margin: auto;
+    border-radius: 80px;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: #7d8cc4;
+    margin: 1px;
+    color: white;
+    font-size: 60px;
+    font-weight: bolder;
+
+}

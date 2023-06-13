@@ -1,0 +1,5 @@
+PS C:\Users\alexa\Documents\Django\Projects\Projet_2_Django>>>> .\env\Scripts\Activate.ps1
+
+(env) PS C:\Users\alexa\Documents\Django\Projects\Projet_2_Django> cd .\Test2\
+
+PS C:\Users\alexa\Documents\Django\Projects\Projet_2_Django\Test2> python .\manage.py runserver

@@ -1,0 +1,15 @@
+{% load static %}
+
+<html>
+    <head>
+        <title>ELEX 2.0</title>
+        <link rel="stylesheet" href="{% static 'style.css' %}" />
+        <link rel="icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
+    </head>
+    <body>
+
+        {% block content %}{% endblock %}
+        
+    </body>
+    <script src="{% static 'JavaScript.js'%}"></script>
+</html>

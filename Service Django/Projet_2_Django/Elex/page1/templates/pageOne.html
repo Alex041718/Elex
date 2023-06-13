@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<h1>ELEX Client 2.0</h1>
+
+<div class="LogBox">
+    
+<div class="LogText">
+<ul class='Logs'>
+    {% for ligne in logs %}
+        <li>{{ ligne }}</li>
+    {% endfor %}
+</ul>
+</div>
+
+</div>
+<div class="Consol">
+
+    <form action="" method="post" novalidate>
+        {% csrf_token %}
+        {{ form }}
+    <input id='sendButton' type="submit" value="Send">
+    </form>
+</div>
+</div>
+
+
+
+<div class="ButtonBox">
+    <div class="container">
+
+    <form action="/ButtonWeatherUrl">
+        <button id="Weather" class="btn"><img id="imgWeather" src="{% static 'ButtonWeatherPicture.png' %}" width="130" height="130" alt="weather"></button>
+    </form>
+
+    <form action="/TimeSetNightButtonUrl">
+        <button type="submit" id="nightButton" class="btn"><img id="imgNight" src="{% static 'ButtonNightPicture.png' %}" width="130" height="130" alt="night"></button>
+    </form>
+
+    <form action="/TimeSetDayButtonUrl">
+        <button id="dayButton" class="btn"><img id="imgNight" src="{% static 'ButtonDayYellowPicture.png' %}" width="130" height="130" alt="Day"></button>
+    </form>
+
+    <form action="/TurnOffPiButtonUrl">
+        <button id="turnOffPiButton" class="btn"><img id="imgNight" src="{% static 'ButtonPowerOffRpi.png' %}" width="130" height="130" alt="turnOffPi"></button>
+    </form>
+    
+    <form action="/TurnOffMcButtonUrl">
+        <button id="TurnOffMcButton" class="btn"><img id="imgNight" src="{% static 'ButtonPowerOffMcServ.png' %}" width="130" height="130" alt="TurnOffMc"></button>
+    </form>
+
+    <form action="/TurnOnMcButtonUrl">
+        <button id="TurnOnMcButton" class="btn"><img id="imgNight" src="{% static 'ButtonPowerOnMcServ.png' %}" width="130" height="130" alt="TurnOnMc"></button>
+    </form>
+
+    
+
+    </div>
+
+</div>
+
+<div id="players">
+
+
+    <div class="subSectionPlayer" id="left">
+
+        {% for name in listPlayers %}
+        <div class="textPlayer" id="firstPlayer">{{ name }}</div>
+        {% endfor %}
+
+    </div>
+
+    <div class="subSectionPlayer" id="right">
+
+        <div id="ratioPlayer">
+            {{numPlayers}} / {{maxPlayers}}
+        </div>
+
+    </div>
+    
+</div>
+
+
+</div>
+{% endblock %}
